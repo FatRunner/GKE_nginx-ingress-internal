@@ -345,7 +345,7 @@ spec:
           args:
             - /nginx-ingress-controller
             - --publish-service=$(POD_NAMESPACE)/ingress-nginx-controller
-            - --election-id=ingress-controller-leader
+            - --election-id=ingress-controller-leader-nginx
             - --ingress-class=nginx-internal
             - --configmap=$(POD_NAMESPACE)/ingress-nginx-controller
             - --validating-webhook=:8443
